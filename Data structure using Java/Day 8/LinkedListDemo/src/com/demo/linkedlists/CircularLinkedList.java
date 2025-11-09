@@ -1,4 +1,4 @@
-package com.demo.linkedlists;
+.package com.demo.linkedlists;
 
 import com.demo.linkedlists.SinglyLinkedList.Node;
 

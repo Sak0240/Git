@@ -11,7 +11,6 @@ public class MyBinarySearchTree {
 			left=null;
 			right=null;
 		}
-    	
     }
 	public MyBinarySearchTree() {
 		root=null;
@@ -35,7 +34,6 @@ public class MyBinarySearchTree {
 			}
 			return root;
 		}
-		
 	}
 	
 	public void inorder() {
@@ -51,12 +49,10 @@ public class MyBinarySearchTree {
 		}
 		
 	}
-	
 	public void preorder() {
 		preorderTraversal(root);
 		System.out.println();
 	}
-
 	private void preorderTraversal(Node root) {
 		if(root!=null) {
 			System.out.print(root.data+", ");
@@ -76,14 +72,11 @@ public class MyBinarySearchTree {
 			postorderTraversal(root.left);
 			postorderTraversal(root.right);
 			System.out.print(root.data+", ");
-		}
-		
+		}	
 	}
-	
 	public void deleteNode(int key) {
 		root=deleteData(root,key);
 	}
-
 	private Node deleteData(Node root, int key) {
 		if(root==null) {
 			return root;
